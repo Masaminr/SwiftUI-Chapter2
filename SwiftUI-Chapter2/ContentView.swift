@@ -9,8 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(alignment: .leading, spacing: 15.0) {
+            HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10.0) {
+                Text("はぎくら").font(.largeTitle).fontWeight(.bold).foregroundColor(Color.red)
+                Text("じょう")
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .foregroundColor(Color.blue)
+            }
+            Spacer()
+            Text("がやってきたよ").font(.title)
+            Spacer()
+            Text("どーだ！！").font(.title)
+        }
     }
 }
 
